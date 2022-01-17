@@ -35,11 +35,6 @@ github 地址：  https://github.com/jzfai/vue3-mobile-uniapp.git
 
 ## 例子
 
- ---- 我们先看看加载速度和构建后的包大小：
-
-![template-speed-analysis](http://8.135.1.141/file/images/template-speed-analysis.png)
-
-![template-demo](http://8.135.1.141/file/images/template-demo.png)
 
 ## 相关项目
 
