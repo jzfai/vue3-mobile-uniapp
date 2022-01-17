@@ -14,7 +14,12 @@ const setting = {
   /*
    * setting dev token when  isNeedLogin is setting false
    * */
-  tmpToken: 'tmp_token'
+  tmpToken: 'tmp_token',
+  /*
+   * vite.config.js base config
+   * such as
+   * */
+  viteBasePath: '/vue3-mobile-uniapp/'
 }
 
 export default setting
