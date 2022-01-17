@@ -1,0 +1,67 @@
+{
+  "pages": [
+    {
+      "path": "pages/TableOne/TableOne",
+      "style": {
+        "navigationBarTitleText": "TableOne",
+        "navigationStyle": "default"
+      }
+    },
+
+    {
+      "path": "pages/TableTwo/TableTwo",
+      "style": {
+        "navigationBarTitleText": "TableTwo",
+        "navigationStyle": "default",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/navigateOne/navigateOne",
+      "style": {
+        "navigationBarTitleText": "navigateOne",
+        "navigationStyle": "default",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/navigateTwo/navigateTwo",
+      "style": {
+        "navigationBarTitleText": "navigateTwo",
+        "navigationStyle": "default",
+        "disableScroll": true
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#B5B5B5",
+    "selectedColor": "#FD6801",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/TableOne/TableOne",
+        "text": "TableOne",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/indexSelected.png"
+      },
+      {
+        "pagePath": "pages/TableTwo/TableTwo",
+        "text": "TableTwo",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/indexSelected.png"
+      }
+    ]
+  },
+  "easycom": {
+    "custom": {
+      "RangeDatePick": "@/components/pyh-rdtpicker/pyh-rdtpicker.vue"
+    }
+  }
+}

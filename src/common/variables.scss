@@ -1,0 +1,18 @@
+// define global var
+//font-size default is 28px of 750 , the 14px of 350
+$defaultSize: 28px;
+
+//the set default line-height is 1
+$defaultLineHeight:1
+//导出scss定义的样式变量
+//vite无法获取scss变量https://github.com/vitejs/vite/issues/1279
+//:export {
+//  menuText: $menuText;
+//  menuActiveText: $menuActiveText;
+//  subMenuActiveText: $subMenuActiveText;
+//  menuBg: $menuBg;
+//  menuHover: $menuHover;
+//  subMenuBg: $subMenuBg;
+//  subMenuHover: $subMenuHover;
+//  sideBarWidth: $sideBarWidth;
+//}

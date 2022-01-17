@@ -1,0 +1,22 @@
+//重置样式改为border-box
+html {
+  box-sizing: border-box;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+//h1 h2 h3 重置
+h1,h2,h3,h4,h5,h6{
+  line-height: 1;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+//设置默认字体和大小 uniapp架构已经默认设置line-height:1 font-size:16px;
+//此处可以不用设置
+body {
+  font-size: 16px;
+  //color: #1d1007;
+  line-height:1
+}
+
