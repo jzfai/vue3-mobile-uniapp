@@ -1,7 +1,5 @@
 # vue3-mobile-uniapp
 
-**中文** | [English](./README-CN.md)
-
 
 > vue3-mobile-uniapp提供企业级的开发demo
 
@@ -10,6 +8,16 @@
 使用 eslint+prettier+gitHooks 格式和校验代码,提高代码规范性和开发效率
 
 使用最先进的包管理工具pnpm
+
+
+## 提示
+现在uniapp cli 方式已经可以用vue3+vite2构建了, 
+我这边测试了三端：h5, 小程序， 和app
+基础构建没有问题，
+目前已测试的功能：vuex，发送req，跳转，接收跳转的参数，svg-icon(h5中可以用)
+然后就是：
+uview-ui": "2.0.20", 目前还不支持vue3
+
 
 ## 更新日志
 
@@ -35,16 +43,16 @@ github 地址：  https://github.com/jzfai/vue3-mobile-uniapp.git
 
 ## 例子
 
+![uniapp-demo](http://8.135.1.141/file/images/uniapp-demo.png)
 
 ## 相关项目
 
-其他相关架构
+相关架构有ts和js版本
 
-- js版本：[vue3-element-admin](https://github.com/jzfai/vue3-admin-template.git)
-- ts版本：[vue3-element-ts](https://github.com/jzfai/vue3-admin-ts.git)
-- js实例参考plus版本：[vue3-element-plus](https://github.com/jzfai/vue3-mobile-uniapp.git)
-- electron版本：[vue3-element-electron](https://github.com/jzfai/vue3-admin-electron.git)
-- react版本： [react-admin-template](https://github.com/jzfai/react-admin-template.git)
+- js版本：[vue3-mobile-uniapp](https://github.com/jzfai/vue3-mobile-uniapp.git)
+- ts版本：[vue3-mobile-uniapp](https://github.com/jzfai/vue3-mobile-uniapp.git)
+- pc plus版本：[vue3-element-plus](https://github.com/jzfai/vue3-mobile-uniapp.git)
+- pc react版本： [react-admin-template](https://github.com/jzfai/react-admin-template.git)
 - java微服务后台数据：[micro-service-plus](https://github.com/jzfai/micro-service-plus)
 
 > 开发和使用感受：两个字 真香！！！！！
