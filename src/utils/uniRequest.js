@@ -25,7 +25,7 @@ request.interceptors.response.use(async (res, ...args) => {
   uni.hideLoading()
   const { flag, msg, code, isNeedUpdateToken, updateToken } = res.data
   const successCode = '0,200,20000'
-  if (successCode.indexOf(code) !== -1) {
+  if (successCode.includes(code)) {
     return res.data
   } else {
     if (reqConfig.isAlertErrorMsg) {
@@ -51,7 +51,7 @@ request.onerror = async (...args) => {
   uni.hideLoading()
 }
 
-export default function uniRequest({ url, data, method, isParams, bfLoading, afHLoading, isAlertErrorMsg }) {
+export const uniRequest = function uniRequest({ url, data, method, isParams, bfLoading, afHLoading, isAlertErrorMsg }) {
   //参数发动的形式
   if (isParams) url = `${url}?` + Qs.stringify(data)
   //是否Loading
@@ -59,3 +59,5 @@ export default function uniRequest({ url, data, method, isParams, bfLoading, afH
   afHLoading = afHLoading || true
   return request[method](url, data)
 }
+
+export default uniRequest

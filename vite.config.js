@@ -3,6 +3,9 @@ import uni from '@dcloudio/vite-plugin-uni'
 import viteSvgIcons from 'vite-plugin-svg-icons'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import setting from './src/settings'
+
+//auto import vue https://www.npmjs.com/package/unplugin-auto-import
+import AutoImport from 'unplugin-auto-import/vite'
 export default ({ command, mode }) => {
   console.log('command', command)
   return {
@@ -16,8 +19,27 @@ export default ({ command, mode }) => {
         iconDirs: [path.resolve(process.cwd(), 'src/icons/common'), path.resolve(process.cwd(), 'src/icons/nav-bar')],
         // appoint svg icon using mode
         symbolId: 'icon-[dir]-[name]'
-      })
+      }),
       // #endif
+      //https://github.com/antfu/unplugin-auto-import/blob/HEAD/src/types.ts
+      AutoImport({
+        // resolvers: [ElementPlusResolver()],
+        imports: [
+          'vue',
+          'vuex',
+          'vue-router',
+          {
+            '@/hooks/global/useCommon': ['useCommon'],
+            '@/utils/uniRequest': ['uniRequest']
+          }
+        ],
+        eslintrc: {
+          enabled: true, // Default `false`
+          filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
+          globalsPropValue: true // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
+        },
+        dts: true //auto generation auto-imports.d.ts file
+      })
     ],
     build: {
       //minify: 'terser',

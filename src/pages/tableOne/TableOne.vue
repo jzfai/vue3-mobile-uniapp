@@ -22,7 +22,6 @@
 </template>
 
 <script setup>
-import { getCurrentInstance, ref } from 'vue'
 let title = ref('这是vue3版本')
 import { useStore } from 'vuex'
 const store = useStore()
@@ -33,7 +32,6 @@ const getterFunc = () => {
 }
 
 //request
-import uniRequest from '@/utils/uniRequest'
 const testReq = () => {
   uniRequest({
     url: '/integration-front/user/loginOut',
@@ -66,13 +64,13 @@ const closeVuexTest = () => {
 }
 
 //navigate
-const { proxy } = getCurrentInstance()
+const common = useCommon()
 const toNavigateOne = () => {
   let data = {
     licenseNo: 11,
     name: 'kuanghua'
   }
-  proxy.toNavigatePageMixin('/pages/navigateOne/navigateOne', data)
+  common.toNavigatePage('/pages/navigateOne/navigateOne', data)
 }
 
 const toNavigateTwo = () => {
@@ -80,7 +78,7 @@ const toNavigateTwo = () => {
     licenseNo: 222,
     name: 'kuanghua'
   }
-  proxy.toNavigatePageMixin('/pages/navigateTwo/navigateTwo', data)
+  common.toNavigatePage('/pages/navigateTwo/navigateTwo', data)
 }
 </script>
 

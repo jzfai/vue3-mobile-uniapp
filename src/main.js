@@ -10,12 +10,12 @@ app.component('SvgIcon', svgIcon)
 // #endif
 
 //globalMixin
-import globalMixin from '@/mixin/globalMixin.js'
-app.mixin(globalMixin)
+// import globalMixin from '@/mixin/globalMixin.js'
+// app.mixin(globalMixin)
 
 //momentMini
-import momentMini from 'moment-mini'
-app.config.globalProperties.$momentMini = momentMini
+// import momentMini from 'moment-mini'
+// app.config.globalProperties.$momentMini = momentMini
 
 //uView support vue3 Not yet
 // import uView from 'uview-ui'
