@@ -12,9 +12,13 @@
 
 ## 提示
 现在uniapp cli 方式已经可以用vue3+vite2构建了, 
+
 我这边测试了三端：h5, 小程序， 和app
+
 基础构建没有问题，
+
 目前已测试的功能：vuex，发送req，跳转，接收跳转的参数，svg-icon(h5中可以用)
+
 然后就是：
 uview-ui": "2.0.20", 目前还不支持vue3
 
@@ -107,11 +111,6 @@ pnpm run lint
 ## 浏览器支持
 
 注意：vue3不在支持IE浏览器
-Modern browsers and Internet Explorer 11+.
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-|Edge| last 2 versions| last 2 versions| last 2 versions
 
 ## 讨论和交流(含vue3+ts视频教程)
 [WeChat group](http://8.135.1.141/file/images/wx-groud.png)
@@ -121,6 +120,5 @@ Modern browsers and Internet Explorer 11+.
 [MIT](https://github.com/jzfai/vue3-mobile-uniapp/blob/master/LICENSE) license.
 
 Copyright (c) 2021-present  kuanghua
-
 
 
