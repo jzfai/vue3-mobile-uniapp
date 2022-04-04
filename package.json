@@ -1,6 +1,6 @@
 {
   "name": "vue3-mobile-uniapp",
-  "version": "0.1.2",
+  "version": "1.0.1",
   "scripts": {
     "dev:app": "uni -p app",
     "dev:custom": "uni -p",
@@ -35,15 +35,9 @@
   },
   "dependencies": {
     "@dcloudio/uni-app": "^3.0.0-alpha-3030820220114001",
-    "@dcloudio/uni-app-plus": "3.0.0-alpha-3030820220114001",
+    "@dcloudio/uni-app-plus": "^3.0.0-alpha-3030820220114001",
     "@dcloudio/uni-components": "^3.0.0-alpha-3030820220114001",
     "@dcloudio/uni-h5": "^3.0.0-alpha-3030820220114001",
-    "@dcloudio/uni-mp-alipay": "^3.0.0-alpha-3030820220114001",
-    "@dcloudio/uni-mp-baidu": "^3.0.0-alpha-3030820220114001",
-    "@dcloudio/uni-mp-kuaishou": "^3.0.0-alpha-3030820220114001",
-    "@dcloudio/uni-mp-lark": "^3.0.0-alpha-3030820220114001",
-    "@dcloudio/uni-mp-qq": "^3.0.0-alpha-3030820220114001",
-    "@dcloudio/uni-mp-toutiao": "^3.0.0-alpha-3030820220114001",
     "@dcloudio/uni-mp-weixin": "^3.0.0-alpha-3030820220114001",
     "@dcloudio/uni-quickapp-webview": "^3.0.0-alpha-3030820220114001",
     "moment-mini": "^2.22.1",
@@ -51,8 +45,7 @@
     "mitt": "3.0.0",
     "uview-ui": "2.0.20",
     "vue": "^3.2.27",
-    "vue-i18n": "^9.1.9",
-    "vuex": "^4.0.2"
+    "pinia": "2.0.13"
   },
   "devDependencies": {
     "@dcloudio/types": "^2.5.16",

@@ -11,21 +11,19 @@
     <view @click="openVuexTest">openVuexTest</view>
     <view @click="closeVuexTest">closeVuexTest</view>
     <div>test的store值：{{ getterValue }}</div>
-    <view @click="testReq">{{ store.state.app.test }}</view>
+    <view @click="testReq">{{ appStore.test }}</view>
   </view>
 </template>
 
 <script setup>
 import { ref } from 'vue'
 let title = ref('这是vue3版本')
-import { useStore } from 'vuex'
-const store = useStore()
-/*getter*/
 let getterValue = ref(null)
+import { useAppStore } from '@/store/app'
+const appStore = useAppStore()
 const getterFunc = () => {
-  getterValue.value = store.getters.cachedViews
+  getterValue.value = appStore.cachedViews
 }
-
 //request
 import uniRequest from '@/utils/uniRequest'
 const testReq = () => {
@@ -39,17 +37,17 @@ const testReq = () => {
 /*mutations*/
 /*建议commit用M_开头 action用A_开头*/
 const c_openVuexTest = () => {
-  store.commit('app/M_vuex_test', true)
+  appStore.M_vuex_test(true)
 }
 const c_closeVuexTest = () => {
-  store.commit('app/M_vuex_test', false)
+  appStore.M_vuex_test(true)
 }
 /*actions*/
 const openVuexTest = () => {
-  store.dispatch('app/A_vuex_test', true)
+  appStore.A_vuex_test(true)
 }
 const closeVuexTest = () => {
-  store.dispatch('app/A_vuex_test', false)
+  appStore.A_vuex_test(false)
 }
 </script>
 

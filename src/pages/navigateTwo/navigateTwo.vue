@@ -21,9 +21,6 @@ onMounted(() => {
 //   levelList: null
 // });
 
-//const routes = computed(() => {
-//    return proxy.$store.state.permission.routes;
-//  });
 // watch(() => props.name, (oldValue,newValue) => {
 //
 //   },

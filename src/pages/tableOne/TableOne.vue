@@ -10,7 +10,7 @@
     <view class="mt-2">action</view>
     <view @click="openVuexTest">openVuexTest</view>
     <view @click="closeVuexTest">closeVuexTest</view>
-    <view>test的store值：{{ store.state.app.test }}</view>
+    <view>test的store值：{{ appStore.test }}</view>
 
     <view class="mt-4">请求测试</view>
     <view @click="testReq">testReq</view>
@@ -22,13 +22,14 @@
 </template>
 
 <script setup>
+import { useAppStore } from '@/store/app'
+
 let title = ref('这是vue3版本')
-import { useStore } from 'vuex'
-const store = useStore()
+const appStore = useAppStore()
 /*getter*/
 let getterValue = ref(null)
 const getterFunc = () => {
-  getterValue.value = store.getters.cachedViews
+  getterValue.value = appStore.cachedViews
 }
 
 //request
@@ -50,17 +51,17 @@ const testReq = () => {
 /*mutations*/
 /*建议commit用M_开头 action用A_开头*/
 const c_openVuexTest = () => {
-  store.commit('app/M_vuex_test', true)
+  appStore.M_vuex_test(true)
 }
 const c_closeVuexTest = () => {
-  store.commit('app/M_vuex_test', false)
+  appStore.M_vuex_test(false)
 }
 /*actions*/
 const openVuexTest = () => {
-  store.dispatch('app/A_vuex_test', true)
+  appStore.A_vuex_test(true)
 }
 const closeVuexTest = () => {
-  store.dispatch('app/A_vuex_test', false)
+  appStore.A_vuex_test(false)
 }
 
 //navigate

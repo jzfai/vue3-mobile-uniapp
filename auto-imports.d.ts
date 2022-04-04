@@ -3,9 +3,6 @@
 declare global {
   const computed: typeof import('vue')['computed']
   const createApp: typeof import('vue')['createApp']
-  const createLogger: typeof import('vuex')['createLogger']
-  const createNamespacedHelpers: typeof import('vuex')['createNamespacedHelpers']
-  const createStore: typeof import('vuex')['createStore']
   const customRef: typeof import('vue')['customRef']
   const defineAsyncComponent: typeof import('vue')['defineAsyncComponent']
   const defineComponent: typeof import('vue')['defineComponent']
@@ -17,10 +14,6 @@ declare global {
   const inject: typeof import('vue')['inject']
   const isReadonly: typeof import('vue')['isReadonly']
   const isRef: typeof import('vue')['isRef']
-  const mapActions: typeof import('vuex')['mapActions']
-  const mapGetters: typeof import('vuex')['mapGetters']
-  const mapMutations: typeof import('vuex')['mapMutations']
-  const mapState: typeof import('vuex')['mapState']
   const markRaw: typeof import('vue')['markRaw']
   const nextTick: typeof import('vue')['nextTick']
   const onActivated: typeof import('vue')['onActivated']
@@ -57,7 +50,6 @@ declare global {
   const useRoute: typeof import('vue-router')['useRoute']
   const useRouter: typeof import('vue-router')['useRouter']
   const useSlots: typeof import('vue')['useSlots']
-  const useStore: typeof import('vuex')['useStore']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
 }

@@ -21,7 +21,8 @@ app.component('SvgIcon', svgIcon)
 // import uView from 'uview-ui'
 // app.use(uView)
 
-//import vuex
-import store from './store'
-app.use(store)
+//import vuex5
+import { createPinia } from 'pinia'
+app.use(createPinia())
+
 app.mount('#app')

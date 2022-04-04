@@ -2,9 +2,6 @@
   "globals": {
     "computed": true,
     "createApp": true,
-    "createLogger": true,
-    "createNamespacedHelpers": true,
-    "createStore": true,
     "customRef": true,
     "defineAsyncComponent": true,
     "defineComponent": true,
@@ -16,10 +13,6 @@
     "inject": true,
     "isReadonly": true,
     "isRef": true,
-    "mapActions": true,
-    "mapGetters": true,
-    "mapMutations": true,
-    "mapState": true,
     "markRaw": true,
     "nextTick": true,
     "onActivated": true,
@@ -56,7 +49,6 @@
     "useRoute": true,
     "useRouter": true,
     "useSlots": true,
-    "useStore": true,
     "watch": true,
     "watchEffect": true
   }

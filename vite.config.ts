@@ -1,3 +1,4 @@
+// @ts-ignore
 import path, { resolve } from 'path'
 import uni from '@dcloudio/vite-plugin-uni'
 import viteSvgIcons from 'vite-plugin-svg-icons'
@@ -26,7 +27,6 @@ export default ({ command, mode }) => {
         // resolvers: [ElementPlusResolver()],
         imports: [
           'vue',
-          'vuex',
           'vue-router',
           {
             '@/hooks/global/useCommon': ['useCommon'],
@@ -42,7 +42,7 @@ export default ({ command, mode }) => {
       })
     ],
     build: {
-      //minify: 'terser',
+    
       brotliSize: false,
       // 消除打包大小超过500kb警告
       chunkSizeWarningLimit: 2000,
